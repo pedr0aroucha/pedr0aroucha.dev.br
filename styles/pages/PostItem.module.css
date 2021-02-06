@@ -3,7 +3,7 @@
   justify-content: center;
   flex-direction: column;
 
-  width: 60%;
+  width: 50%;
 
   margin: 1em auto;
 
@@ -17,6 +17,13 @@
 
   text-transform: capitalize;
 }
+
+.postItem img {
+  width: 100%;
+
+  margin: 1em 0;
+}
+
 .postItem h3 {
   margin-bottom: 1em;
 }
@@ -24,4 +31,8 @@
   margin-bottom: 2em;
 
   color: gray;
+}
+
+.postItem p a {
+  border-bottom: 0.15em solid var(--color-secondary);
 }
