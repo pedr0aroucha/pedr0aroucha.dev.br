@@ -1,0 +1,34 @@
+.postCard {
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+
+  margin: 1em;
+  padding: 2em;
+
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+  border-bottom: 0.2em solid var(--color-primary);
+
+  transition: 0.4s all;
+}
+
+.postCard:hover {
+  transform: translateY(-0.5em);
+
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.25);
+}
+
+.postCard img {
+  width: 15em;
+
+  margin: 1em 0;
+}
+
+.postCard span {
+  margin: 1em 0;
+}
+
+.postCard section {
+  display: none;
+}

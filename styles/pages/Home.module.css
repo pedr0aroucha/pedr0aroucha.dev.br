@@ -1,0 +1,157 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  color: var(--color-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-100em);
+  }
+  to {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes fadeInTwo {
+  from {
+    transform: translateY(100em);
+  }
+  to {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes fadeInThree {
+  from {
+    transform: translateX(100em);
+  }
+  to {
+    transform: translateX(0em);
+  }
+}
+
+@keyframes fadeInFour {
+  from {
+    transform: translateX(-100em);
+  }
+  to {
+    transform: translateX(0em);
+  }
+}
+
+.home h1 {
+  margin-bottom: 1em;
+
+  text-align: center;
+
+  animation: fadeIn 1s both;
+
+  text-transform: capitalize;
+}
+
+.home > a {
+  color: gray;
+
+  animation: fadeInTwo 1s both;
+}
+
+.home main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home main > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  min-height: 50vh;
+}
+
+.home main > p {
+  width: 60%;
+
+  font-size: 1.25em;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  animation: fadeInThree 1s both;
+}
+
+.home main > div {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25em;
+}
+
+.home main > div h1 {
+  position: absolute;
+
+  text-transform: lowercase;
+
+  height: 100%;
+  width: 100%;
+
+  color: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.home main > div h1::before {
+  content: '<';
+}
+.home main > div h1::after {
+  content: '/>';
+}
+
+.home main > div img {
+  width: 100%;
+  margin: 0 auto;
+
+  animation: fadeInFour 1s both;
+}
+
+.home main > a {
+  margin-top: 3em;
+
+  cursor: pointer;
+
+  color: white;
+
+  padding: 0.7em 1.5em;
+
+  background: var(--color-primary);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  transition: 0.4s all;
+}
+
+.home main > a:hover {
+  box-shadow: 0 0 1.2em 0.1em rgba(115, 186, 155, 0.8);
+}
+
+@media (min-width: 700px) {
+  .home main img {
+    width: 25em;
+  }
+}

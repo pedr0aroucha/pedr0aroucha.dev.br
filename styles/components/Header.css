@@ -1,0 +1,166 @@
+header .wrapper {
+  width: 100%;
+
+  position: relative;
+
+  padding: 0.5em 0;
+  margin-bottom: 3em;
+
+  font-weight: 600;
+
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}
+
+header .wrapper input {
+  display: none;
+}
+
+header .wrapper label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0 1em;
+
+  height: 1em;
+
+  cursor: pointer;
+}
+
+header .wrapper label::before,
+header .wrapper label::after {
+  content: '';
+
+  margin: 0.1em 0;
+
+  width: 2em;
+  height: 0.5em;
+
+  background-color: black;
+}
+
+header .wrapper nav > a {
+  /*text-shadow: 0.1em 0.1em 0.1em rgba(115, 186, 155, 0.25);*/
+
+  background-color: var(--color-primary);
+
+  padding: 0.5em 1em;
+
+  color: white;
+}
+
+header .wrapper input:checked ~ nav {
+  opacity: 1;
+
+  color: white;
+
+  z-index: 999;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .wrapper input ~ nav > div,
+header .wrapper input ~ nav > a {
+  display: none;
+}
+
+header .wrapper input ~ nav > main a {
+  margin: 1em;
+}
+
+header .wrapper nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+
+  opacity: 0;
+
+  margin-top: 0.5em;
+
+  transition: 0.4s all;
+
+  padding: 5em;
+
+  position: absolute;
+
+  z-index: -1;
+}
+
+header .wrapper nav > main {
+  display: flex;
+  flex-direction: column;
+}
+
+header .wrapper nav > main a {
+  transition: 0.4s all;
+
+  text-transform: capitalize;
+}
+
+header .wrapper nav > main a:hover {
+  color: var(--color-secondary);
+}
+
+header .wrapper nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .wrapper nav > div img {
+  width: 1.5em;
+
+  margin-left: 0.5em;
+}
+
+@media (min-width: 900px) {
+  header .wrapper label {
+    display: none;
+  }
+
+  header .wrapper input ~ nav,
+  header .wrapper input:checked ~ nav {
+    position: relative;
+
+    height: initial;
+
+    margin-top: 0;
+
+    opacity: 1;
+
+    z-index: 999;
+
+    color: var(--color-primary);
+
+    flex-direction: row;
+
+    left: 0;
+
+    background-color: transparent;
+
+    padding: 0 2em;
+  }
+
+  header .wrapper input ~ nav > main a {
+    margin: 1em;
+  }
+
+  header .wrapper input ~ nav > main,
+  header .wrapper input:checked ~ nav > main {
+    flex-direction: row;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  header .wrapper input:checked ~ nav > div,
+  header .wrapper input ~ nav > div,
+  header .wrapper input:checked ~ nav > a,
+  header .wrapper input ~ nav > a {
+    display: flex;
+  }
+}

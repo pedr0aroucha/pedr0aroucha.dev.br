@@ -1,0 +1,43 @@
+.blogContainer {
+  min-height: 30vh;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation: fadeIn 1s both;
+
+  color: var(--color-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(100em);
+  }
+  to {
+    transform: translateX(0em);
+  }
+}
+
+.blog ul {
+  margin: 0 1em;
+}
+
+.blog > h1 {
+  margin-bottom: 1em;
+
+  text-transform: capitalize;
+}
+
+.postsContainer {
+  margin: 2em;
+}
+.posts {
+  margin: 1em 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
