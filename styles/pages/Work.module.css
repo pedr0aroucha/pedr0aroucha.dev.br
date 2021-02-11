@@ -1,0 +1,114 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: fadeIn 1s both;
+
+  color: var(--color-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100em);
+  }
+  to {
+    transform: translateY(0em);
+  }
+}
+
+.work > h1 {
+  margin-bottom: 1em;
+
+  text-transform: capitalize;
+}
+
+.work > p {
+  filter: opacity(0.4);
+
+  font-weight: 700;
+
+  margin-bottom: 2em;
+}
+
+.work > a {
+  height: 5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.work > a img {
+  width: 2em;
+
+  position: absolute;
+
+  animation: jumpingImage 2s both infinite;
+}
+
+.work > .works {
+  margin-top: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work > .works > .item {
+  position: relative;
+
+  margin: 0.15em;
+
+  display: flex;
+
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .work > .works > .item {
+    width: 49%;
+  }
+}
+
+.work > .works > .item span {
+  position: absolute;
+
+  color: white;
+
+  opacity: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(115, 186, 155, 0.5);
+
+  height: 100%;
+  width: 100%;
+
+  transition: 0.4s all;
+}
+
+.work > .works > .item span:hover {
+  opacity: 1;
+}
+
+.work > .works > .item img {
+  width: 100%;
+}
+
+@keyframes jumpingImage {
+  0% {
+    top: 20%;
+  }
+  50% {
+    top: 0%;
+  }
+  100% {
+    top: 20%;
+  }
+}

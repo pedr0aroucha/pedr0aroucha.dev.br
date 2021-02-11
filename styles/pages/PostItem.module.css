@@ -1,0 +1,89 @@
+.postItem {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+
+  padding: 0 2em;
+
+  color: var(--color-primary);
+}
+
+.postItem main {
+  width: 100%;
+
+  margin: 1em auto;
+}
+
+.postItem main > a {
+  color: gray;
+}
+
+.postItem main > h1 {
+  margin: 0.5em 0;
+
+  text-transform: capitalize;
+}
+
+.postItem main section p {
+  line-height: 1.8;
+
+  font-weight: 400;
+}
+
+.postItem main > div {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1em;
+}
+
+.postItem main > div img {
+  width: 3em;
+
+  border-radius: 5em;
+
+  margin-right: 0.6em;
+}
+
+.postItem main > div p {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.8em;
+}
+
+.postItem main > div p a {
+  color: var(--color-secondary);
+
+  border-bottom: none;
+
+  margin-top: 0.5em;
+
+  cursor: pointer;
+}
+
+.postItem main img {
+  width: 100%;
+
+  margin: 1em 0;
+}
+
+.postItem main > h3 {
+  margin-bottom: 1em;
+}
+.postItem main > h5 {
+  margin-bottom: 2em;
+
+  color: gray;
+}
+
+.postItem main p a {
+  border-bottom: 0.15em solid var(--color-secondary);
+}
+
+@media (min-width: 700px) {
+  .postItem main {
+    width: 50%;
+  }
+}

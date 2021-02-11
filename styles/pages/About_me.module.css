@@ -1,0 +1,131 @@
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: fadeIn 1s both;
+
+  text-align: center;
+
+  color: var(--color-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100em);
+  }
+  to {
+    transform: translateX(0em);
+  }
+}
+
+.about_me h1 {
+  margin-bottom: 1em;
+
+  text-transform: capitalize;
+}
+
+.about_me img {
+  filter: grayscale(10%);
+}
+
+.about_me .I,
+.about_me .skills,
+.about_me .tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1em;
+  margin-top: 0;
+}
+
+.about_me .I {
+  width: 60%;
+
+  text-align: justify;
+}
+
+.about_me .I img {
+  width: 5em;
+  min-height: 5em;
+
+  background-color: gray;
+
+  margin-bottom: 2.5em;
+
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.about_me .I b {
+  color: var(--color-primary);
+
+  margin-right: 0.25em;
+}
+
+.about_me .tools img,
+.about_me .skills img {
+  width: 2.5em;
+
+  margin: 1em 0.5em;
+}
+
+.about_me .skills {
+  margin-top: 2em;
+}
+
+.about_me ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillCard {
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+  border-bottom: 0.2em solid var(--color-primary);
+
+  padding: 0.5em 1em;
+
+  margin: 1em;
+
+  transition: 0.4s all;
+
+  position: relative;
+}
+
+.skillCard figcaption {
+  font-size: 0.8em;
+  opacity: 0;
+
+  position: absolute;
+
+  text-align: center;
+
+  width: 100%;
+
+  left: 0%;
+
+  bottom: -2em;
+
+  transition: 0.4s all;
+}
+
+.skillCard:hover {
+  transform: translateY(-0.5em);
+
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.25);
+}
+
+.skillCard:hover figcaption {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .about_me .I {
+    width: 80%;
+  }
+}
