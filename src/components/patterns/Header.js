@@ -23,21 +23,13 @@ export default function Header() {
             <Link href="/work">
               <a onClick={closeBar}>trabalhos</a>
             </Link>
-            <Link href="/contact">
-              <a onClick={closeBar}>contato</a>
-            </Link>
             <Link href="/blog">
               <a onClick={closeBar}>blog</a>
             </Link>
+            <Link href="/contact">
+              <a onClick={closeBar}>contato</a>
+            </Link>
           </main>
-          <div>
-            <a href="https://instagram.com/pedr0aroucha" target="_blank">
-              <img src="/images/instagram.png" alt="instagram logo" />
-            </a>
-            <a href="https://github.com/pedr0aroucha" target="_blank">
-              <img src="/images/github.png" alt="github logo" />
-            </a>
-          </div>
         </nav>
       </div>
     </header>

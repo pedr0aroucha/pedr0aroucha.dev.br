@@ -68,12 +68,14 @@ header .wrapper input ~ nav > a {
 
 header .wrapper input ~ nav > main a {
   margin: 1em;
+
+  font-weight: 500;
 }
 
 header .wrapper nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
 
   height: 100vh;
@@ -128,6 +130,7 @@ header .wrapper nav > div img {
     position: relative;
 
     height: initial;
+    left: 0;
 
     margin-top: 0;
 
@@ -136,14 +139,11 @@ header .wrapper nav > div img {
     z-index: 999;
 
     color: var(--color-primary);
+    background-color: transparent;
 
     flex-direction: row;
 
-    left: 0;
-
-    background-color: transparent;
-
-    padding: 0 2em;
+    padding: 0 4em;
   }
 
   header .wrapper input ~ nav > main a {
@@ -153,8 +153,6 @@ header .wrapper nav > div img {
   header .wrapper input ~ nav > main,
   header .wrapper input:checked ~ nav > main {
     flex-direction: row;
-
-    width: 100%;
 
     justify-content: center;
   }

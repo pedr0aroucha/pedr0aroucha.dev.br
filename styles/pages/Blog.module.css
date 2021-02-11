@@ -5,6 +5,8 @@
 
   animation: fadeIn 1s both;
 
+  min-height: 100vh;
+
   color: var(--color-primary);
 }
 

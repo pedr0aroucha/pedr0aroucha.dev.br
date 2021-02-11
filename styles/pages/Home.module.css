@@ -1,162 +1,70 @@
 .home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  min-height: 100vh;
+  min-height: 60vh;
 
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+
+  padding: 5em 1em;
+
+  color: white;
+
+  margin-top: 5em;
 }
 
-@keyframes fadeIn {
-  from {
-    transform: translateY(-100em);
-  }
-  to {
-    transform: translateY(0em);
-  }
+.home div {
+  width: 100%;
 }
 
-@keyframes fadeInTwo {
-  from {
-    transform: translateY(100em);
-  }
-  to {
-    transform: translateY(0em);
-  }
-}
-
-@keyframes fadeInThree {
-  from {
-    transform: translateX(100em);
-  }
-  to {
-    transform: translateX(0em);
-  }
-}
-
-@keyframes fadeInFour {
-  from {
-    transform: translateX(-100em);
-  }
-  to {
-    transform: translateX(0em);
-  }
-}
-
-.home h1 {
+.home div h1 {
   margin-bottom: 1em;
-
-  text-align: center;
-
-  animation: fadeIn 1s both;
 
   text-transform: capitalize;
 }
 
-.home > a {
+.home div > a {
   color: gray;
 
-  animation: fadeInTwo 1s both;
+  padding-bottom: 0.15em;
+
+  border-bottom: 0.1em solid var(--color-secondary);
 
   z-index: 999;
 }
 
-.home main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+.home div > p {
+  margin: 1.5em 0;
 
-.home main > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  min-height: 50vh;
-}
-
-.home main > p {
-  width: 60%;
+  letter-spacing: 0.1em;
 
   font-size: 1.25em;
-
   font-weight: 600;
-
-  text-align: center;
-
-  animation: fadeInThree 1s both;
 }
 
-.home main > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.home img {
+  border-radius: 100%;
+  border: 0.1em solid var(--color-secondary);
 
-  width: 25em;
+  margin-right: 5em;
+  padding: 0.15em;
 
-  position: relative;
-}
+  display: none;
 
-.home main > div code {
-  position: absolute;
-
-  text-transform: lowercase;
-
-  font-size: 2.5em;
-
-  font-weight: 600;
-
-  height: 100%;
-  width: 100%;
-
-  color: var(--color-primary);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.home main > div code::before {
-  content: '<';
-}
-.home main > div code::after {
-  content: '/>';
-}
-
-.home main > div img {
-  width: 100%;
-
-  margin: 1em auto;
-
-  animation: fadeInFour 1s both;
-}
-
-.home main > a {
-  margin-top: 3em;
-
-  cursor: pointer;
-
-  color: white;
-
-  padding: 0.7em 1.5em;
-
-  background: var(--color-primary);
-
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.home main > a:hover {
-  box-shadow: 0 0 1.2em 0.1em rgba(115, 186, 155, 0.8);
+  width: 20%;
+  height: 20%;
 }
 
 @media (min-width: 700px) {
-  .home main img {
-    width: 25em;
+  .home {
+    padding: 5em;
+  }
+
+  .home img {
+    display: flex;
+  }
+
+  .home div {
+    width: 50%;
   }
 }
