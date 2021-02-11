@@ -1,6 +1,6 @@
 ---
 title: 'Expressão Regular(Regex)'
-date: '09 de Janeiro de 2021'
+date: '11 de Março de 2021'
 excerpt: 'Programação Ninja'
 ---
 
