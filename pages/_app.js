@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 
 import Header from '../src/components/patterns/Header';
 import Footer from '../src/components/patterns/Footer';
+import Social from '../src/components/patterns/Social';
 
 import '../public/nprogress/styles.css';
 
@@ -40,6 +41,7 @@ function MyApp({ Component, pageProps }) {
         ></link>
       </Head>
       <Header />
+      <Social />
       <Component {...pageProps} />
       <Footer />
     </main>

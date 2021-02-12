@@ -14,12 +14,11 @@ export default function About_me() {
           trabalhando na Soft News(Anápolis Goiás) como Desenvolvedor. <br />
           <br />
           <b>Conhecimentos sólido em: </b>
-          Python3, Javascript(ES6+), Desenvolvimento Web, Código Limpo,
-          Arquitetura Limpa, Padrão de Projetos, SOLID, REST FULL API, SQL,
-          Programação Orientada a Objetos e Programação Funcional.
+          Desenvolvimento Web, Código Limpo, Arquitetura Limpa, SOLID, REST FULL
+          API, Regexp, Programação Orientada a Objetos e Programação Funcional.
           <br /> <br />
           <b>Eu estou estudando:</b>
-          UI/UX designer,
+          UI/UX designer, SEO, AWS, Testes de Software e Designer Patterns.
         </p>
       </div>
       <div className={styles.skills}>

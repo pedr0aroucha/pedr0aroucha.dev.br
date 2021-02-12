@@ -8,6 +8,8 @@
   min-height: 100vh;
 
   color: var(--color-primary);
+
+  margin-top: 3em;
 }
 
 @keyframes fadeIn {

@@ -1,16 +1,15 @@
 .home {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  min-height: 60vh;
+  min-height: 85vh;
 
   background-color: var(--color-primary);
 
   padding: 5em 1em;
 
   color: white;
-
-  margin-top: 5em;
 }
 
 .home div {
@@ -51,8 +50,42 @@
 
   display: none;
 
+  cursor: pointer;
+
   width: 20%;
   height: 20%;
+
+  position: relative;
+
+  transition: 0.5s all;
+
+  animation: imgEffects 2s normal infinite;
+
+  --initial: 0.15em;
+  --medium: 0.35em;
+}
+
+@keyframes imgEffects {
+  0% {
+    box-shadow: 0em 0em var(--initial) var(--initial) rgba(115, 186, 155, 1);
+    -webkit-box-shadow: 0em 0em var(--initial) var(--initial)
+      rgba(115, 186, 155, 1);
+    -moz-box-shadow: 0em 0em var(--initial) var(--initial)
+      rgba(115, 186, 155, 1);
+  }
+  50% {
+    box-shadow: 0em 0em var(--medium) var(--medium) rgba(115, 186, 155, 1);
+    -webkit-box-shadow: 0em 0em var(--medium) var(--medium)
+      rgba(115, 186, 155, 1);
+    -moz-box-shadow: 0em 0em var(--medium) var(--medium) rgba(115, 186, 155, 1);
+  }
+  100% {
+    box-shadow: 0em 0em var(--initial) var(--initial) rgba(115, 186, 155, 1);
+    -webkit-box-shadow: 0em 0em var(--initial) var(--initial)
+      rgba(115, 186, 155, 1);
+    -moz-box-shadow: 0em 0em var(--initial) var(--initial)
+      rgba(115, 186, 155, 1);
+  }
 }
 
 @media (min-width: 700px) {

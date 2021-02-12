@@ -1,3 +1,4 @@
+import { FiArrowDown } from 'react-icons/fi';
 import styles from '../styles/pages/Work.module.css';
 
 export default function Work() {
@@ -8,7 +9,7 @@ export default function Work() {
       <p>meus trabalhos</p>
 
       <a href="#works">
-        <img src="/images/icon-arrow-down.png" alt="arrow-down" />
+        <FiArrowDown />
       </a>
 
       <div className={styles.works} id="works">

@@ -7,6 +7,8 @@
   animation: fadeIn 1s both;
 
   color: var(--color-primary);
+
+  margin-top: 3em;
 }
 
 @keyframes fadeIn {
@@ -35,19 +37,32 @@
 .work > a {
   height: 5em;
 
+  margin: 1em 0;
+  padding: 1em;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  position: relative;
+  animation: jumpingImage 2s both infinite;
+
+  transition: 0.5s all;
 }
 
-.work > a img {
-  width: 2em;
+.work > a svg {
+  font-size: 3em;
 
-  position: absolute;
+  transition: 0.5s all;
+}
 
-  animation: jumpingImage 2s both infinite;
+.work > a svg:hover {
+  transform: rotate(360deg);
+}
+
+.work > a:hover {
+  animation: none;
+
+  margin-bottom: 0.5em;
 }
 
 .work > .works {
@@ -103,12 +118,12 @@
 
 @keyframes jumpingImage {
   0% {
-    top: 20%;
+    transform: translateY(1em);
   }
   50% {
-    top: 0%;
+    transform: translateY(0em);
   }
   100% {
-    top: 20%;
+    transform: translateY(1em);
   }
 }

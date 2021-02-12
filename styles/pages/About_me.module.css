@@ -9,6 +9,8 @@
   text-align: center;
 
   color: var(--color-primary);
+
+  margin-top: 3em;
 }
 
 @keyframes fadeIn {
