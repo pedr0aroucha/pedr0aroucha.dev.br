@@ -23,11 +23,25 @@ function MyApp({ Component, pageProps }) {
     <main>
       <TopProgressBar />
       <Head>
-        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Type" charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="Desenvolvedor de Software - Pedro Aroucha. Crio e desenvolvo soluções que facilitam sua vida. Pedro Lucas de Aroucha Monteiro - Anápolis Goiás."
+        />
+        <meta
+          name="copyright"
+          content="Feito por Pedro Lucas de Aroucha Monteiro"
+        />
+        <meta
+          name="keywords"
+          content="Programador, Web, sites, websites, Desenvolvedor,
+          Desenvolvedor Web, Programador JavaScript, 
+          Programador Python, Programador Web"
+        />
+        <meta
+          name="DOC.title"
+          content="Pedro Aroucha - Programador Web - Desenvolvedor de Software"
         />
         <title>Pedro Aroucha</title>
         <link rel="icon" href="/pedr0_dev.png" />
