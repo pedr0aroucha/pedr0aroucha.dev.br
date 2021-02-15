@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import { PostCard } from '../src/components/postCard';
 
 import { getAllPosts } from '../src/scripts/getAllPosts';
@@ -7,18 +5,6 @@ import { getAllPosts } from '../src/scripts/getAllPosts';
 import styles from '../styles/pages/Blog.module.css';
 
 export default function Blog({ posts }) {
-  useEffect(() => {
-    // GAMBIARRA PARA ARRUMAR O BUG DA VERSÃO MOBILE DO BLOG - CARA, ARRUMA ISSO PQP
-    if (document.getElementById('__next-build-watcher')) {
-      var count = 0;
-      while (count < 50) {
-        document.getElementById('__next-build-watcher').style.display = 'none';
-        document.getElementById('__next-build-watcher').style.display = 'block';
-        count++;
-      }
-    }
-  });
-
   return (
     <main id="blog" className={styles.blogContainer}>
       <div className={styles.blog}>
