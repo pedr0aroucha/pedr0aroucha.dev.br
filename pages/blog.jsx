@@ -9,11 +9,13 @@ import styles from '../styles/pages/Blog.module.css';
 export default function Blog({ posts }) {
   useEffect(() => {
     // GAMBIARRA PARA ARRUMAR O BUG DA VERSÃO MOBILE DO BLOG - CARA, ARRUMA ISSO PQP
-    var count = 0;
-    while (count < 50) {
-      document.getElementById('__next-build-watcher').style.display = 'none';
-      document.getElementById('__next-build-watcher').style.display = 'block';
-      count++;
+    if (document.getElementById('__next-build-watcher').style) {
+      var count = 0;
+      while (count < 50) {
+        document.getElementById('__next-build-watcher').style.display = 'none';
+        document.getElementById('__next-build-watcher').style.display = 'block';
+        count++;
+      }
     }
   });
 
