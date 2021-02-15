@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import Link from 'next/link';
 
 import parse from 'html-react-parser';
@@ -7,6 +9,14 @@ import { getAllPosts } from '../../src/scripts/getAllPosts';
 import styles from '../../styles/pages/PostItem.module.css';
 
 export default function PostItem({ targetPost }) {
+  const [isMounted, setIsMounted] = useState();
+
+  useEffect(() => {
+    setIsMounted(true);
+  });
+
+  if (!isMounted) return null;
+
   return (
     <div className={styles.postItem}>
       <main>

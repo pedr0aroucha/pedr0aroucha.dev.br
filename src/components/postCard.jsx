@@ -4,15 +4,14 @@ import PropTypes from 'prop-types';
 
 import styles from '../../styles/components/PostCard.module.css';
 
-export function PostCard({ title, date, excerpt, slug, handleClick }) {
+export function PostCard({ title, date, excerpt, slug }) {
   const router = useRouter();
 
   return (
     <div
       className={styles.postCard}
       onClick={() => {
-        router.push('blog/' + slug);
-        handleClick();
+        router.push('post/' + slug);
       }}
     >
       <h1>{title}</h1>
@@ -27,5 +26,4 @@ PostCard.propTypes = {
   date: PropTypes.string,
   excerpt: PropTypes.string,
   slug: PropTypes.string,
-  handleClick: PropTypes.func,
 };

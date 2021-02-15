@@ -10,8 +10,13 @@ export default function About_me() {
 
         <p>
           <b>Olá</b>, Sou o Pedro, escrevo códigos desde 2017, mas entrei no
-          mercado em 2019. Faço vários trabalhos freela, mas estou atualmente
-          trabalhando na Soft News(Anápolis Goiás) como Desenvolvedor. <br />
+          mercado em 2019. Faço vários trabalhos como freelancer, mas estou
+          atualmente trabalhando na Soft News - Anápolis Goiás como
+          Desenvolvedor Jr e na Integra como Desenvolvedor. <br />
+          Quando não estou no computador gosto de tocar violão ou qualquer outro
+          instrumento que estiver disponível, ver séries, jogar online ou
+          praticar algum esporte.
+          <br />
           <br />
           <b>Conhecimentos sólido em: </b>
           Desenvolvimento Web, Código Limpo, Arquitetura Limpa, SOLID, REST FULL
