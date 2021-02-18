@@ -6,8 +6,6 @@ export default function About_me() {
       <h1>sobre </h1>
 
       <div className={styles.I}>
-        <img src="https://github.com/pedr0aroucha.png" alt="pedr0aroucha" />
-
         <p>
           <b>Olá</b>, Sou o Pedro, escrevo códigos desde 2017, mas entrei no
           mercado em 2019. Faço vários trabalhos como freelancer, mas estou

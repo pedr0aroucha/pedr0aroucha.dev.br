@@ -68,6 +68,7 @@ export default function Contact() {
             id="mensagem"
             placeholder="Sua mensagem..."
             required
+            rows={6}
             value={dataToSend.mensagem}
             onChange={handleChange}
           ></textarea>

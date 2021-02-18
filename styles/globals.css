@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #252525;
+  --color-primary: #333333;
   --color-secondary: #73ba9b;
 }
 
@@ -15,7 +15,8 @@
 }
 
 html {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 110%;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -39,12 +40,4 @@ html::-webkit-scrollbar {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Poppins', sans-serif;
 }

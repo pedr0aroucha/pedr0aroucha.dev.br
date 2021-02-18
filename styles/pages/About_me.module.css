@@ -28,10 +28,6 @@
   text-transform: capitalize;
 }
 
-.about_me img {
-  filter: grayscale(10%);
-}
-
 .about_me .I,
 .about_me .skills,
 .about_me .tools {
@@ -48,19 +44,6 @@
   width: 60%;
 
   text-align: justify;
-}
-
-.about_me .I img {
-  width: 5em;
-  min-height: 5em;
-
-  background-color: gray;
-
-  margin-bottom: 2.5em;
-
-  border-radius: 50%;
-
-  background-color: transparent;
 }
 
 .about_me .I b {

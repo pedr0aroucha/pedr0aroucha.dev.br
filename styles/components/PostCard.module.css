@@ -16,6 +16,9 @@
 .postCard:hover {
   transform: translateY(-0.5em);
 
+  color: var(--color-secondary);
+  border-bottom: 0.2em solid var(--color-secondary);
+
   box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.25);
 }
 

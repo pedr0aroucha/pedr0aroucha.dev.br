@@ -10,6 +10,7 @@ export function PostCard({ title, date, excerpt, slug }) {
   return (
     <div
       className={styles.postCard}
+      id="postCard"
       onClick={() => {
         router.push('post/' + slug);
       }}
