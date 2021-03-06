@@ -10,7 +10,7 @@ export default function About_me() {
           <b>Olá</b>, Sou o Pedro, escrevo códigos desde 2017, mas entrei no
           mercado em 2019. Faço vários trabalhos como freelancer, mas estou
           atualmente trabalhando na Soft News - Anápolis Goiás como
-          Desenvolvedor Jr e na Integra como Desenvolvedor. <br />
+          Desenvolvedor Jr e na Integra como Desenvolvedor Full Stack. <br />
           Quando não estou no computador gosto de tocar violão ou qualquer outro
           instrumento que estiver disponível, ver séries, jogar online ou
           praticar algum esporte.
@@ -21,7 +21,7 @@ export default function About_me() {
           API, Regexp, Programação Orientada a Objetos e Programação Funcional.
           <br /> <br />
           <b>Eu estou estudando:</b>
-          UI/UX designer, SEO, AWS, Testes de Software e Designer Patterns.
+          UI/UX designer, SEO, Testes de Software e Designer Patterns.
         </p>
       </div>
       <div className={styles.skills}>
