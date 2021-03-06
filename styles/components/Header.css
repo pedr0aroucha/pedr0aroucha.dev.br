@@ -6,8 +6,6 @@ header .wrapper {
   padding: 0.5em 0;
 
   font-weight: 600;
-
-  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
 }
 
 header .wrapper input {
@@ -17,7 +15,6 @@ header .wrapper input {
 header .wrapper label {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   margin: 0 1em;
 
@@ -38,14 +35,6 @@ header .wrapper label::after {
   background-color: black;
 }
 
-header .wrapper nav > a {
-  background-color: var(--color-primary);
-
-  padding: 0.5em 1em;
-
-  color: white;
-}
-
 header .wrapper nav > a:hover {
   box-shadow: 0 0 1.2em 0.1em rgba(115, 186, 155, 0.8);
 }
@@ -60,8 +49,7 @@ header .wrapper input:checked ~ nav {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-header .wrapper input ~ nav > div,
-header .wrapper input ~ nav > a {
+header .wrapper input ~ nav > div {
   display: none;
 }
 
@@ -74,7 +62,7 @@ header .wrapper input ~ nav > main a {
 header .wrapper nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 
   height: 100vh;

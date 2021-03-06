@@ -15,8 +15,10 @@ export default function Header() {
         <input type="checkbox" name="menu" id="menu" />
 
         <nav>
-          <Link href="/">pedr0aroucha</Link>
           <main>
+            <Link href="/">
+              <a onClick={closeBar}>início</a>
+            </Link>
             <Link href="/about-me">
               <a onClick={closeBar}>sobre</a>
             </Link>
