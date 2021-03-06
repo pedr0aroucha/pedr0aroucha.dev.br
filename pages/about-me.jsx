@@ -33,12 +33,6 @@ export default function About_me() {
               <figcaption>Javascript</figcaption>
             </figure>
           </div>
-          <div className={styles.skillCard} name="php">
-            <figure>
-              <img src="https://img.icons8.com/officel/2x/php-logo.png" />
-              <figcaption>PHP</figcaption>
-            </figure>
-          </div>
           <div className={styles.skillCard} name="sql">
             <figure>
               <img src="https://img.icons8.com/ios-filled/2x/sql.png" />
