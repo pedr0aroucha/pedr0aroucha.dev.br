@@ -11,6 +11,8 @@
   border-bottom: 0.2em solid var(--color-primary);
 
   transition: 0.4s all;
+
+  font-size: 90%;
 }
 
 .postCard:hover {
@@ -30,4 +32,10 @@
 
 .postCard span {
   margin: 1em 0;
+}
+
+@media (min-width: 700px) {
+  .postCard {
+    max-width: 40%;
+  }
 }

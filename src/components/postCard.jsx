@@ -12,7 +12,7 @@ export function PostCard({ title, date, excerpt, slug }) {
       className={styles.postCard}
       id="postCard"
       onClick={() => {
-        router.push('post/' + slug);
+        window.location.href = '/post/' + slug;
       }}
     >
       <h1>{title}</h1>

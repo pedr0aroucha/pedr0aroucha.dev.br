@@ -12,6 +12,8 @@ export default function PostItem({ targetPost }) {
   const [isMounted, setIsMounted] = useState();
 
   useEffect(() => {
+    document.getElementById('header').style.display = 'none';
+
     setIsMounted(true);
   });
 
@@ -20,7 +22,7 @@ export default function PostItem({ targetPost }) {
   return (
     <div className={styles.postItem}>
       <main>
-        <Link href="/blog">Voltar</Link>
+        <a href="/blog">Voltar</a>
         <div>
           <img src="https://github.com/pedr0aroucha.png" />
           <p>
@@ -34,6 +36,7 @@ export default function PostItem({ targetPost }) {
         <h3>{targetPost.metadata.excerpt}</h3>
         <h5>{targetPost.metadata.date}</h5>
         <section>{parse(targetPost.content)}</section>
+        <a href="/blog">Voltar</a>
       </main>
     </div>
   );

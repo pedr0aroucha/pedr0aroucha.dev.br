@@ -7,7 +7,7 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <header id="header">
       <div className="wrapper">
         <label id="menuButton" htmlFor="menu">
           {' '}

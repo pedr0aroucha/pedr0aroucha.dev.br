@@ -33,6 +33,18 @@ export default function About_me() {
               <figcaption>Javascript</figcaption>
             </figure>
           </div>
+          <div className={styles.skillCard} name="html">
+            <figure>
+              <img src="https://img.icons8.com/color/2x/html-5.png" />
+              <figcaption>HTML5</figcaption>
+            </figure>
+          </div>
+          <div className={styles.skillCard} name="css">
+            <figure>
+              <img src="https://img.icons8.com/color/2x/css3.png" />
+              <figcaption>CSS3</figcaption>
+            </figure>
+          </div>
           <div className={styles.skillCard} name="sql">
             <figure>
               <img src="https://img.icons8.com/ios-filled/2x/sql.png" />
@@ -45,16 +57,10 @@ export default function About_me() {
               <figcaption>Python</figcaption>
             </figure>
           </div>
-          <div className={styles.skillCard} name="html">
+          <div className={styles.skillCard} name="java">
             <figure>
-              <img src="https://img.icons8.com/color/2x/html-5.png" />
-              <figcaption>HTML5</figcaption>
-            </figure>
-          </div>
-          <div className={styles.skillCard} name="css">
-            <figure>
-              <img src="https://img.icons8.com/color/2x/css3.png" />
-              <figcaption>CSS3</figcaption>
+            <img src="https://img.icons8.com/color/2x/java-coffee-cup-logo.png"/>
+              <figcaption>Java</figcaption>
             </figure>
           </div>
         </ul>
