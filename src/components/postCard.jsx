@@ -17,6 +17,11 @@ export function PostCard({ title, date, excerpt, slug }) {
     >
       <h1>{title}</h1>
       <span>{date}</span>
+
+      <figure>
+        <img src="/images/52338123.jfif" />
+        <figcaption>Pedro Aroucha</figcaption>
+      </figure>
       <p>{excerpt}</p>
     </div>
   );
